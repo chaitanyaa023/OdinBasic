@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left Image, Right Content</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .left {
+      flex: 1;
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .content {
+      max-width: 500px;
+      text-align: center;
+    }
+    .form {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <div class="content">
+        <h1>Welcome!</h1>
+        <p>Application Form</p>
+        <div class="form">
+            <p>Let's do this!</p>
+            <form action="">
+                <label for="name">First Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Your last name.."><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email.."><br><br>
+                <label for="phonenumber">Phone Number</label><br>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="Your phone number.." maxlength="10" minlength="0"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Your password.."><br><br>
+                <label for="password">Confirm Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Your password.."><br><br>
+            </form>
+        </div>
+        <br>
+        <button>Create Account</button>
+        <p>Already have an account? Log in</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
